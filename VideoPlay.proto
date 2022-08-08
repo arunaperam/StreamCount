@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message stream {
+  repeated VideoPlays VideoPlay = 1;
+}
+message VideoPlays {
+  string start_time  = 1;
+  string end_time  = 2;
+}
